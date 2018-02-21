@@ -12,6 +12,7 @@ public class Utility {
         Map<String, JSONObject> jsonMap = new HashMap();
         Gson gson = new Gson();
         jsonMap = gson.fromJson(jsonResponse.toString(), HashMap.class);
+	System.out.println("jsonMap is "+jsonMap);
         return jsonMap;
     }
 
